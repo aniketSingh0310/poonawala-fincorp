@@ -29,6 +29,8 @@ const BranchListPage: React.FC = () => {
     });
 
     setFilteredBranches(filtered);
+    
+    
   };
 
   return (

@@ -49,6 +49,7 @@ const BranchFilter: React.FC<{
         <label className="flex items-center gap-1 text-gray-700 text-sm font-bold mb-2">
          <IoIosPeople className='text-[#223a72] w-[17px] h-[17px]'/> Customer Size Range: {customerSizeRange[0]} - {customerSizeRange[1]}
         </label>
+        Min:
         <input
           type="range"
           min={0}
@@ -59,6 +60,7 @@ const BranchFilter: React.FC<{
           }
           className="w-full"
         />
+        Max:
         <input
           type="range"
           min={0}
@@ -74,6 +76,7 @@ const BranchFilter: React.FC<{
         <label className="flex items-center gap-1 text-gray-700 text-sm font-bold mb-2">
           <FcCustomerSupport className='text-[#223a72] w-[17px] h-[17px]'/>Employee Size Range: {employeeSizeRange[0]} - {employeeSizeRange[1]}
         </label>
+        Min:
         <input
           type="range"
           min={0}
@@ -84,6 +87,7 @@ const BranchFilter: React.FC<{
           }
           className="w-full"
         />
+        Max:
         <input
           type="range"
           min={0}
