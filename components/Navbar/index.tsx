@@ -3,7 +3,7 @@ import React from "react";
 
 export const Navbar = () => {
   return (
-    <div className="hidden md:block">
+    <div className="hidden md:block sticky top-0 z-50">
       <div className="navbar bg-base-100">
         <div className="flex-1 px-4">
           

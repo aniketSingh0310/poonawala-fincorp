@@ -14,7 +14,7 @@ import { CSSTransition } from "react-transition-group";
   };
 
     return (
-        <div className="md:hidden">
+        <div className="md:hidden sticky top-0 z-50 bg-white">
     <div className="flex justify-between items-center px-6 md:px-20">
     <Link href={"/"}>
       <Image
