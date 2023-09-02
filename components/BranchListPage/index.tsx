@@ -45,23 +45,14 @@ const BranchListPage: React.FC = () => {
         ]}
         onFilterChange={handleFilterChange}
       />
-      <h1 className="text-2xl text-[#223a72] font-bold my-4">Branches</h1>
-      {/* <div className="mt-4">
-        <ul>
-          {filteredBranches.map((branch, index) => (
-            <li key={index} className="mb-2">
-              {branch.location}, {branch.city} - Customer Size:{' '}
-              {branch.customer_size}, Employee Size: {branch.employees_size}
-            </li>
-          ))}
-        </ul>
-      </div> */}
+      <h1 className="text-2xl text-[#223a72] font-bold my-4 ml-3">Branches</h1>
+      
       <div className="mt-4">
         <div className="flex flex-row flex-wrap gap-[20px] justify-center items-center">
           {filteredBranches.map((branch, index) => (
             <div
               key={index}
-              className="card w-96 bg-base-100 shadow-xl border border-[#223a72be]"
+              className="card w-96 bg-base-100 shadow-xl border border-[#223a72be] mx-2"
             >
               <div className="card-body">
                 <div className="flex  items-center gap-1">
@@ -91,7 +82,7 @@ const BranchListPage: React.FC = () => {
                 </div>
 
                 <div className="card-actions justify-end">
-                  <button className="btn btn-primary bg-[#223a72] font-semibold">
+                  <button className="btn btn-primary bg-[#223a72] text-white font-semibold">
                     Details
                   </button>
                 </div>

@@ -26,7 +26,7 @@ const BranchFilter: React.FC<{
   };
 
   return (
-    <div className="bg-white p-4 shadow-lg  border-[#223a72] border-[2px] rounded-lg">
+    <div className="bg-white p-4 shadow-lg  border-[#223a72] border-[2px] rounded-lg mx-2">
       <h2 className="text-xl font-semibold  border-b border-[#223a7282] mb-4 flex flex-row items-center gap-1"><FaFilter className='text-[#223a72] w-[13px] h-[13px] '/>Manage Branches</h2>
       <div className="mb-4">
         <label className=" text-gray-700 text-sm font-bold mb-2 flex items-center gap-1">

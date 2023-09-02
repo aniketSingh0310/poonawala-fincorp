@@ -3,13 +3,13 @@ import React from "react";
 
 export const Navbar = () => {
   return (
-    <div>
+    <div className="hidden md:block">
       <div className="navbar bg-base-100">
         <div className="flex-1 px-4">
-          {/* <a className="btn btn-ghost normal-case text-xl">daisyUI</a> */}
+          
           <Image className="btn btn-ghost normal-case" src="/static/pf.png" alt="logo" width={200} height={100} />
         </div>
-        <div className="flex-none font-semibold text-[15px]">
+        <div className=" flex-none font-semibold text-[15px]">
           <ul className="menu menu-horizontal px-1">
             <li>
               <a>Link</a>
