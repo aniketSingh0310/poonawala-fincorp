@@ -14,5 +14,9 @@
       )
       rgb(var(--background-start-rgb));
     }
+
+    .scroll{
+      scroll-behavior: smooth;
+    }
   }
     

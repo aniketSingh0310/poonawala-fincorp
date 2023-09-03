@@ -99,12 +99,15 @@ const BranchFilter: React.FC<{
           className="w-full mt-2"
         />
       </div>
+      <a href='#card'>
+
       <button
-        className="bg-[#223a72] text-white px-4 py-2 rounded-full hover:bg-blue-600 transition-colors"
+        className="bg-[#223a72] text-white px-4 py-2 scroll rounded-full hover:bg-blue-600 transition-colors"
         onClick={applyFilters}
-      >
+        >
         Apply Filters
       </button>
+        </a>
     </div>
   );
 };

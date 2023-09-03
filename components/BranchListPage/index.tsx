@@ -50,7 +50,7 @@ const BranchListPage: React.FC = () => {
       <h1 className="text-2xl text-[#223a72] font-bold my-4 ml-3">Branches</h1>
       
       <div className="mt-4">
-        <div className="flex flex-row flex-wrap gap-[20px] justify-center items-center">
+        <div id="card" className="flex flex-row flex-wrap gap-[20px] justify-center items-center">
           {filteredBranches.map((branch, index) => (
             <div
               key={index}
