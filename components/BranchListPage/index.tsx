@@ -50,6 +50,9 @@ const BranchListPage: React.FC = () => {
       <h1 className="text-2xl text-[#223a72] font-bold my-4 ml-3">Branches</h1>
       
       <div className="mt-4">
+      {filteredBranches.length === 0 ? (
+    <div className="text-center text-gray-500 text-lg">No branches match the selected criteria.</div>
+  ) : (
         <div id="card" className="flex flex-row flex-wrap gap-[20px] justify-center items-center">
           {filteredBranches.map((branch, index) => (
             <div
@@ -92,6 +95,7 @@ const BranchListPage: React.FC = () => {
             </div>
           ))}
         </div>
+        )}
       </div>
     </div>
   );

@@ -11,18 +11,24 @@ const BranchFilter: React.FC<{
   const [selectedCity, setSelectedCity] = useState('');
   const [customerSizeRange, setCustomerSizeRange] = useState([0, 1500]);
   const [employeeSizeRange, setEmployeeSizeRange] = useState([0, 25]);
+  const [sizeError, setSizeError] = useState(false);
 
   const handleCityChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
     setSelectedCity(event.target.value);
   };
 
   const applyFilters = () => {
-    const filters = {
-      city: selectedCity,
-      customerSizeRange,
-      employeeSizeRange,
-    };
-    onFilterChange(filters);
+    if (customerSizeRange[0] > customerSizeRange[1] || employeeSizeRange[0] > employeeSizeRange[1]) {
+      setSizeError(true);
+    } else {
+      setSizeError(false);
+      const filters = {
+        city: selectedCity,
+        customerSizeRange,
+        employeeSizeRange,
+      };
+      onFilterChange(filters);
+    }
   };
 
   return (
@@ -108,6 +114,9 @@ const BranchFilter: React.FC<{
         Apply Filters
       </button>
         </a>
+        {sizeError && (
+  <div className="text-red-500 text-center text-sm">Minimum size cannot be greater than maximum size.</div>
+)}
     </div>
   );
 };
